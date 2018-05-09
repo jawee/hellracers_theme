@@ -10772,6 +10772,9 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+body {
+  background-color: #EDEDED; }
+
 * {
   font-family: 'Cairo', sans-serif;
   font-weight: 100; }
@@ -10779,7 +10782,8 @@ a.skip-link {
 #wrapper-navbar {
   position: absolute;
   width: 100%;
-  top: 50px; }
+  top: 50px;
+  z-index: 999; }
   #wrapper-navbar .dropdown {
     position: unset; }
   #wrapper-navbar .navbar {
@@ -10885,5 +10889,10 @@ a.skip-link {
          object-fit: cover;
       max-height: 150px; }
 
-body {
-  background-color: #EDEDED; }
+@media (max-width: 767.98px) {
+  #wrapper-navbar {
+    width: 100%;
+    position: relative;
+    top: auto; }
+    #wrapper-navbar .navbar {
+      margin: 0; } }

@@ -25,6 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </head>
 
 <body <?php body_class(); ?>>
+
 <div class="hfeed site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->

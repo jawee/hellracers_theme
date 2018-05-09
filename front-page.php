@@ -12,9 +12,9 @@
 
 $container   = get_theme_mod( 'understrap_container_type' );
 
-	get_template_part('inc/featured-slider');
-	get_header();
 
+	get_header();
+	get_template_part('inc/featured-slider');
 ?>
 <!-- <?php get_template_part( 'global-templates/hero' ); ?> -->
 <div class="wrapper" id="start-wrapper">

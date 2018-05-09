@@ -1,5 +1,5 @@
 <?php
-require (__DIR__ . '/inc/class-wp-bootstrap-navwalker.php');
+require (get_theme_file_path() . '/inc/class-wp-bootstrap-navwalker.php');
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
     wp_deregister_style( 'understrap-styles' );

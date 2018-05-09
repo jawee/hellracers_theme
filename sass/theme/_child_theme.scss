@@ -3,21 +3,20 @@ $yellow: #ffb900;
 $blue: #115fff;
 $darkblue: #002856;
 
+body {
+  background-color: #EDEDED;
+}
+
 * {
   font-family: 'Cairo', sans-serif;
   font-weight: 100;
 }
 
 #wrapper-navbar {
-  // background: url('http://192.168.1.50/wp-content/uploads/2018/04/ferrari_488_gte.jpeg');
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // text-transform: uppercase;
-  // height: 700px;
-  // background-position: center;
   position: absolute;
   width: 100%;
   top: 50px;
+  z-index: 999;
 
   .dropdown {
     position: unset;
@@ -184,6 +183,14 @@ $darkblue: #002856;
   }
 }
 
-body {
-  background-color: #EDEDED;
+@media (max-width: 767.98px) {
+  #wrapper-navbar {
+    width: 100%;
+    position: relative;
+    top: auto;
+
+    .navbar {
+      margin: 0;
+    }
+  }
 }
