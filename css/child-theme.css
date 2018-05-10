@@ -10897,13 +10897,18 @@ body {
       margin: 0; } }
 
 @media (max-width: 767.98px) {
+  #wrapper-navbar #main-menu > li.show {
+    background: none; }
   #wrapper-navbar #main-menu li a {
     padding: 5px 0; }
+  #wrapper-navbar #main-menu li .dropdown-menu-level0.show {
+    background: none;
+    border: none; }
   #wrapper-navbar #main-menu li .dropdown-menu-level0 .dropdown-item-1 {
     font-size: 1rem;
     font-weight: 300; }
   #wrapper-navbar #main-menu li .dropdown-menu-level0 li {
     display: block;
-    margin-left: 0; }
+    margin-left: 10px; }
     #wrapper-navbar #main-menu li .dropdown-menu-level0 li .dropdown-menu-level1 {
       display: none; } }
