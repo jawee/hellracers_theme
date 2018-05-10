@@ -10889,9 +10889,8 @@ body {
          object-fit: cover;
       max-height: 150px; }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
   #wrapper-navbar {
-    width: 100%;
     position: relative;
     top: auto; }
     #wrapper-navbar .navbar {

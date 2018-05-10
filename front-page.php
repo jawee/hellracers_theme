@@ -32,7 +32,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				  $count = 0;
 				  foreach($recent_posts as $recent) {
 				    ?>
-						<div class="col-sm">
+						<div class="col-md">
 							<div class="news-content">
 								<div class="image-container" style="background-image: url(<?php echo get_the_post_thumbnail_url($recent["ID"]); ?>)">
 								</div>
