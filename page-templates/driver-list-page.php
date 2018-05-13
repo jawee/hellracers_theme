@@ -17,18 +17,21 @@ get_header();
 				<?php
 				$driverpages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
 
-				print_r($driverpages);
-
-				?>
-				<?php
 				  $count = 0;
 				  foreach($driverpages as $driverpage) {
+
+				  	$thumbnail_url = "";
+				  	if(has_post_thumbnail($driverpage->ID)) {
+						$thumbnail_url = get_the_post_thumbnail_url($driverpage->ID);
+					} else {
+						$thumbnail_url = get_the_post_thumbnail_url($post->ID);
+					}
 				    ?>
 						<div class="col-md">
 							<div class="news-content">
-								<div class="image-container" style="background-image: url(<?php echo get_the_post_thumbnail_url($driverpage->ID); ?>)">
+								<div class="image-container" style="background-image: url(<?php echo $thumbnail_url; ?>)">
 								</div>
-					    	<!-- <img src="<?php echo get_the_post_thumbnail_url($driverpage->ID); ?>" class="img-fluid"> -->
+					    	<!-- <img src="<?php echo $thumbnail_url; ?>" class="img-fluid"> -->
 					      <!-- <div class="carousel-caption d-none d-md-block"> -->
 				        
 				        <a href="<?php echo get_permalink($driverpage->ID); ?>" class=""><h3><?php echo $driverpage->post_title; ?></h3></a>
