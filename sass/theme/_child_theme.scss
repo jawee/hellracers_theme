@@ -170,7 +170,8 @@ body {
     padding-bottom: 15px;
     background-color: #ffffff;
     .image-container {
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
       background-position: center;
       height: 170px;
       width: 100%;

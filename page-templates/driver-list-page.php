@@ -19,13 +19,7 @@ get_header();
 
 				  $count = 0;
 				  foreach($driverpages as $driverpage) {
-
-				  	$thumbnail_url = "";
-				  	if(has_post_thumbnail($driverpage->ID)) {
 						$thumbnail_url = get_the_post_thumbnail_url($driverpage->ID);
-					} else {
-						$thumbnail_url = get_the_post_thumbnail_url($post->ID);
-					}
 				    ?>
 						<div class="col-md">
 							<div class="news-content">

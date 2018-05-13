@@ -31,12 +31,13 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				<?php
 				  $count = 0;
 				  foreach($recent_posts as $recent) {
+						$thumbnail_url = get_the_post_thumbnail_url($recent["ID"]);
 				    ?>
 						<div class="col-md">
 							<div class="news-content">
-								<div class="image-container" style="background-image: url(<?php echo get_the_post_thumbnail_url($recent["ID"]); ?>)">
+								<div class="image-container" style="background-image: url(<?php echo $thumbnail_url; ?>)">
 								</div>
-					    	<!-- <img src="<?php echo get_the_post_thumbnail_url($recent["ID"]); ?>" class="img-fluid"> -->
+					    	<!-- <img src="<?php echo $thumbnail_url; ?>" class="img-fluid"> -->
 					      <!-- <div class="carousel-caption d-none d-md-block"> -->
 				        <h3><?php echo $recent["post_title"]; ?></h3>
 				        <a href="<?php echo get_permalink($recent["ID"]); ?>" class="btn btn-primary">Läs mer</a>
