@@ -3,6 +3,9 @@ $yellow: #ffb900;
 $blue: #115fff;
 $darkblue: #002856;
 
+$footerTop: #1F6BA0;
+$footerBottom: #002856;
+
 body {
   background-color: #EDEDED;
 }
@@ -120,6 +123,93 @@ body {
 .bg-yellow {
   background-color: $yellow;
 }
+
+#wrapper-footer-top {
+  text-transform: uppercase;
+  border-bottom: 3px solid $black;
+  background: $footerTop;
+  color: $white;
+  padding: 0;
+  ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      padding: 5px 10px;
+      border-right: 1px solid #1C5F8D;
+      display: inline-block;
+
+      &:first-child {
+        border-left: 1px solid #1C5F8D;
+      }
+    }
+  }
+
+  .calendar-menu {
+    li {
+      border: none;
+      vertical-align: middle;
+      i {
+        margin-right: 5px;
+      }
+      &:first-child {
+        border: none;
+      }
+    }
+  }
+  a {
+    color: $white;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
+
+#wrapper-footer-bottom {
+  background: $footerBottom;
+  color: $white;
+  text-align: top;
+  text-transform: uppercase;
+  a {
+    color: $white;
+  }
+  ul {
+    list-style: none;
+    
+    li {
+      margin-right: 30px;
+      a {
+        font-weight: 300;
+      }
+      display: inline-block;
+      vertical-align: top;
+      .sub-menu {
+        padding-top: 20px;
+        display: block;
+        position: relative;
+        padding-left: 0;
+        li {
+          display: list-item;
+          margin-left: 0;
+          a {
+            font-weight: 100;
+            color: darken($white, 10%);
+            font-size: 0.8rem
+          }
+        }
+      }
+    }
+  }
+
+  .top-divider {
+    border-top: 1px solid $white;
+    padding-top: 15px;
+  }
+}
+
+
 
 #featured-slider {
   .carousel-item {
