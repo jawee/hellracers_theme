@@ -82,7 +82,11 @@ $the_theme = wp_get_theme();
 				<?php the_custom_logo(); ?>
 			</div>
 			<div class="col-md-3 copyright">
-				<p>&copy; <?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> <?php echo date("Y"); ?></p>
+				<div class="copyright-outer">
+					<div class="copyright-inner">
+						<p>&copy; <?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> <?php echo date("Y"); ?></p>	
+					</div>
+				</div>
 			</div>
 		</div><!-- row end -->
 
