@@ -146,9 +146,11 @@ body {
   }
 
   .calendar-menu {
+    text-align: right;
     li {
       border: none;
       vertical-align: middle;
+      padding-right: 0;
       i {
         margin-right: 5px;
       }
@@ -177,7 +179,7 @@ body {
   }
   ul {
     list-style: none;
-    
+    padding-left: 0;
     li {
       margin-right: 30px;
       a {
@@ -203,9 +205,20 @@ body {
     }
   }
 
-  .top-divider {
-    border-top: 1px solid $white;
-    padding-top: 15px;
+  .footer-bottom {
+    padding-top: 30px;
+
+    a, .copyright {
+      font-weight: 100;
+      color: #e6e6e6;
+      font-size: .8rem;
+    }
+    .copyright {
+      text-align: right;
+    }
+  }
+  .divider {
+    padding-top: 10px;
   }
 }
 

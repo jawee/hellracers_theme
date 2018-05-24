@@ -10859,13 +10859,16 @@ body {
       display: inline-block; }
       #wrapper-footer-top ul li:first-child {
         border-left: 1px solid #1C5F8D; }
-  #wrapper-footer-top .calendar-menu li {
-    border: none;
-    vertical-align: middle; }
-    #wrapper-footer-top .calendar-menu li i {
-      margin-right: 5px; }
-    #wrapper-footer-top .calendar-menu li:first-child {
-      border: none; }
+  #wrapper-footer-top .calendar-menu {
+    text-align: right; }
+    #wrapper-footer-top .calendar-menu li {
+      border: none;
+      vertical-align: middle;
+      padding-right: 0; }
+      #wrapper-footer-top .calendar-menu li i {
+        margin-right: 5px; }
+      #wrapper-footer-top .calendar-menu li:first-child {
+        border: none; }
   #wrapper-footer-top a {
     color: #fff; }
     #wrapper-footer-top a:hover {
@@ -10879,7 +10882,8 @@ body {
   #wrapper-footer-bottom a {
     color: #fff; }
   #wrapper-footer-bottom ul {
-    list-style: none; }
+    list-style: none;
+    padding-left: 0; }
     #wrapper-footer-bottom ul li {
       margin-right: 30px;
       display: inline-block;
@@ -10898,9 +10902,16 @@ body {
             font-weight: 100;
             color: #e6e6e6;
             font-size: 0.8rem; }
-  #wrapper-footer-bottom .top-divider {
-    border-top: 1px solid #fff;
-    padding-top: 15px; }
+  #wrapper-footer-bottom .footer-bottom {
+    padding-top: 30px; }
+    #wrapper-footer-bottom .footer-bottom a, #wrapper-footer-bottom .footer-bottom .copyright {
+      font-weight: 100;
+      color: #e6e6e6;
+      font-size: .8rem; }
+    #wrapper-footer-bottom .footer-bottom .copyright {
+      text-align: right; }
+  #wrapper-footer-bottom .divider {
+    padding-top: 10px; }
 
 #featured-slider .carousel-item {
   max-width: 1920px;

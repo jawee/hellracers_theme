@@ -33,5 +33,13 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
 
 register_nav_menu(
-  'footer', __('Footer Navigation', 'understrap-child')  
+  'footerSub', __('Footer Sub Navigation', 'understrap-child')  
+);
+
+register_nav_menu(
+  'footerMain', __('Footer Main Navigation', 'understrap-child')  
+);
+
+register_nav_menu(
+  'footerSocial', __('Footer Social Navigation', 'understrap-child')  
 );
