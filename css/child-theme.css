@@ -10772,12 +10772,18 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+body.home {
+  background-color: #EDEDED;
+  font-weight: 100; }
+
 body {
-  background-color: #EDEDED; }
+  background-color: #fff; }
+
+.size-full {
+  width: 100%; }
 
 * {
-  font-family: 'Cairo', sans-serif;
-  font-weight: 100; }
+  font-family: 'Cairo', sans-serif; }
 
 #wrapper-navbar {
   position: absolute;

@@ -6,13 +6,21 @@ $darkblue: #002856;
 $footerTop: #1F6BA0;
 $footerBottom: #002856;
 
-body {
+body.home {
   background-color: #EDEDED;
+  font-weight: 100;
+}
+
+body {
+  background-color: $white;
+}
+
+.size-full {
+  width: 100%;
 }
 
 * {
   font-family: 'Cairo', sans-serif;
-  font-weight: 100;
 }
 
 #wrapper-navbar {
