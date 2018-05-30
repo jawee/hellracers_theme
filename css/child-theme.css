@@ -10995,4 +10995,12 @@ body {
     display: block;
     margin-left: 10px; }
     #wrapper-navbar #main-menu li .dropdown-menu-level0 li .dropdown-menu-level1 {
-      display: none; } }
+      display: none; }
+  #footer-sub-menu {
+    display: none; }
+  #wrapper-footer-bottom .divider {
+    display: none; }
+  #wrapper-footer-bottom ul li {
+    display: block; }
+    #wrapper-footer-bottom ul li a {
+      display: block; } }

@@ -357,4 +357,26 @@ body {
 
     }
   }
+
+  #footer-sub-menu {
+    display: none;
+  }
+
+  #wrapper-footer-bottom {
+    .divider {
+      display: none;
+    }
+
+    ul {
+
+      li {
+        display: block;
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+
+
 }
