@@ -22,7 +22,7 @@ $the_theme = wp_get_theme();
 								'container_id'    => 'footer-nav-container',
 								'menu_class'      => 'footer-nav',
 								'fallback_cb'     => '',
-								'menu_id'         => 'footer-sub-menu',
+								'menu_id'         => 'footer-social-menu',
 								'depth'           => 2,
 							)
 						); ?>
