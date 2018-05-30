@@ -10998,9 +10998,12 @@ body {
       display: none; }
   #footer-sub-menu {
     display: none; }
+  #wrapper-footer-top .calendar-menu {
+    text-align: left; }
   #wrapper-footer-bottom .divider {
     display: none; }
-  #wrapper-footer-bottom ul li {
+  #wrapper-footer-bottom .footer-bottom ul li {
     display: block; }
-    #wrapper-footer-bottom ul li a {
-      display: block; } }
+    #wrapper-footer-bottom .footer-bottom ul li a {
+      display: block;
+      font-size: 1rem; } }

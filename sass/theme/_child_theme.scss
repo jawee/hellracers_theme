@@ -362,21 +362,27 @@ body {
     display: none;
   }
 
+  #wrapper-footer-top {
+    .calendar-menu {
+      text-align: left;
+    }
+  }
+
   #wrapper-footer-bottom {
     .divider {
       display: none;
     }
-
-    ul {
-
-      li {
-        display: block;
-        a {
+    .footer-bottom {
+      ul {
+        li {
           display: block;
+          a {
+            display: block;
+            font-size: 1rem;
+          }
         }
       }
     }
+    
   }
-
-
 }
