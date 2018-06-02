@@ -10990,6 +10990,12 @@ body {
          object-fit: cover;
       max-height: 150px; }
 
+.entry-meta {
+  margin-bottom: 20px; }
+  .entry-meta a {
+    color: #000;
+    text-transofmr: uppercase; }
+
 @media (max-width: 1199.98px) {
   #wrapper-navbar {
     position: relative;

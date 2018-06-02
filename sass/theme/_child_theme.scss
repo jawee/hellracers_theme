@@ -336,6 +336,14 @@ body {
   }
 }
 
+.entry-meta {
+  margin-bottom: 20px;
+  a{
+    color: $black;
+    text-transofmr: uppercase;
+  }
+}
+
 @media (max-width: 1199.98px) {
   #wrapper-navbar {
     position: relative;
