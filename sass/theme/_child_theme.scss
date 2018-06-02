@@ -34,8 +34,9 @@ body {
   }
 
   .navbar {
-    margin: 0 200px 0 200px;
+    // margin: 0 200px 0 200px;
     // top: 50px;
+    margin: 0 auto;
     padding: 0px;
     .navbar-brand {
       padding: 0;
@@ -275,6 +276,7 @@ body {
   }
 
   .carousel-caption {
+    display: none !important;
     bottom: 50px;
     h3 {
       font-weight: 400;
@@ -284,8 +286,28 @@ body {
   }
 }
 
-#index-wrapper, #page-wrapper, #single-wrapper, #driver-wrapper {
+.home {
+  #featured-slider {
+    .carousel-caption {
+      display: block !important;
+      bottom: 50px;
+      h3 {
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+
+    }
+  }
+}
+
+
+
+#index-wrapper, #page-wrapper, #driver-wrapper {
   padding-top: 170px;
+}
+
+#single-wrapper {
+  padding-top: 5px;
 }
 
 .btn-primary {
@@ -318,6 +340,7 @@ body {
   #wrapper-navbar {
     position: relative;
     top: auto;
+    background-color: $yellow;
     .navbar {
       margin: 0;
     }

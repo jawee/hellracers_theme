@@ -6,6 +6,7 @@
  */
 
 get_header();
+get_template_part('inc/featured-slider');
 $container   = get_theme_mod( 'understrap_container_type' );
 ?>
 
