@@ -10805,9 +10805,12 @@ body {
   #wrapper-navbar #main-menu > li .dropdown-menu-level0 {
     width: 100%;
     background: transparent;
-    top: 97%;
+    top: 87%;
+    border: none;
     border-radius: 0px; }
-    #wrapper-navbar #main-menu > li .dropdown-menu-level0.show {
+    #wrapper-navbar #main-menu > li .dropdown-menu-level0 .container {
+      padding-top: 15px;
+      padding-bottom: 15px;
       background: rgba(0, 40, 86, 0.9); }
     #wrapper-navbar #main-menu > li .dropdown-menu-level0 a {
       text-transform: none; }

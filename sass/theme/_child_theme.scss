@@ -57,8 +57,11 @@ body {
       .dropdown-menu-level0 {
         width: 100%;
         background: transparent;
-        top: 97%;
-        &.show {
+        top: 87%;
+        border: none;
+        .container {
+          padding-top: 15px;
+          padding-bottom: 15px;
           background: rgba($darkblue, 0.9);
         }
 
