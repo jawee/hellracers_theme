@@ -10,8 +10,7 @@ $the_theme = wp_get_theme();
 // $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php get_sidebar( 'footerfull' ); ?>
-<div class="wrapper" id="wrapper-footer-top">
+<div class="wrapper" id="wrapper-footer-top"> <!-- wrapper footer start -->
 	<div class="container">
 		<div class="row top-footer">
 			<div class="col-md-8">

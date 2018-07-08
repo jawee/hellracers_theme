@@ -370,6 +370,9 @@ body {
         }
 
         .dropdown-menu-level0 {
+          .container {
+            background: none;
+          }
           &.show {
             background: none;
             border: none;

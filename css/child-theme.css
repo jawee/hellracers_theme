@@ -11012,6 +11012,8 @@ body {
     background: none; }
   #wrapper-navbar #main-menu li a {
     padding: 5px 0; }
+  #wrapper-navbar #main-menu li .dropdown-menu-level0 .container {
+    background: none; }
   #wrapper-navbar #main-menu li .dropdown-menu-level0.show {
     background: none;
     border: none; }
