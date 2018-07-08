@@ -49,6 +49,9 @@ body {
       display: none;
     }
     & > li {
+      a {
+        text-transform: uppercase;
+      }
       &:hover, &:active, &.show {
         color: #fff;
         background: $darkblue;
@@ -60,21 +63,22 @@ body {
         top: 87%;
         border: none;
         .container {
-          padding-top: 15px;
-          padding-bottom: 15px;
+          padding-top: 30px;
+          padding-bottom: 30px;
           background: rgba($darkblue, 0.9);
-        }
+        
 
-        a {
-          text-transform: none;
-          &:hover, &:active {
-            background: none;
+          a {
+            text-transform: none;
+            &:hover, &:active {
+              background: none;
 
+            }
           }
-        }
 
-        > li {
-          margin-left: 50px;
+          > li {
+            margin-left: 50px;
+          }
         }
 
         .dropdown-item-1 {
