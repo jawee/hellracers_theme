@@ -329,6 +329,10 @@ body {
 .news-frontpage {
   text-align: center;
   margin-bottom: 30px;
+
+  .col-md-4 {
+    margin-bottom: 15px;
+  }
   .news-content {
     padding-bottom: 15px;
     background-color: #ffffff;

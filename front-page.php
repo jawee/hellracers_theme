@@ -33,7 +33,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				  foreach($recent_posts as $recent) {
 						$thumbnail_url = get_the_post_thumbnail_url($recent["ID"]);
 				    ?>
-						<div class="col-md">
+						<div class="col-md-4">
 							<div class="news-content">
 								<div class="image-container" style="background-image: url(<?php echo $thumbnail_url; ?>)">
 								</div>
@@ -44,11 +44,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 							</div>
 				    </div>
 				    <?php
-				    $count++;
-						if($count%3 == 0) {
-							echo '</div>';
-							echo '<div class="row news-frontpage">';
-						}
+				    
 				  }
 
 					$remaining = $count%3;
@@ -57,9 +53,9 @@ $container   = get_theme_mod( 'understrap_container_type' );
 					}
 
 				?>
-	</div><!-- .row -->
+		</div><!-- .row -->
 
-</div><!-- Container end -->
+	</div><!-- Container end -->
 
 </div><!-- Wrapper front-page end -->
 

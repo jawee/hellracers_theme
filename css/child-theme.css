@@ -10983,6 +10983,8 @@ body {
 .news-frontpage {
   text-align: center;
   margin-bottom: 30px; }
+  .news-frontpage .col-md-4 {
+    margin-bottom: 15px; }
   .news-frontpage .news-content {
     padding-bottom: 15px;
     background-color: #ffffff; }
