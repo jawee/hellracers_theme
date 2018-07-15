@@ -10989,7 +10989,7 @@ body {
     padding-bottom: 15px;
     background-color: #ffffff; }
     .news-frontpage .news-content .image-container {
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       height: 170px;
