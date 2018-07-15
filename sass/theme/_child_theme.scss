@@ -27,6 +27,14 @@ body {
   font-family: 'Cairo', sans-serif;
 }
 
+.btn-primary, .btn-secondary {
+  color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
 #wrapper-navbar {
   position: absolute;
   width: 100%;
