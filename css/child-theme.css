@@ -10967,7 +10967,7 @@ body {
     font-weight: 400;
     margin-bottom: 30px; }
 
-#index-wrapper, #page-wrapper, #driver-wrapper {
+#index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper {
   padding-top: 170px; }
 
 #single-wrapper {
@@ -10995,6 +10995,36 @@ body {
          object-fit: cover;
       max-height: 150px; }
 
+.driver-list {
+  text-align: center;
+  margin-bottom: 30px; }
+  .driver-list .driver-content {
+    padding-bottom: 15px;
+    background-color: #ffffff;
+    text-align: left; }
+    .driver-list .driver-content h2 {
+      margin-bottom: 15px; }
+    .driver-list .driver-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0; }
+      .driver-list .driver-content h3 a {
+        color: #000; }
+    .driver-list .driver-content h4 {
+      font-size: 0.75rem;
+      color: #adb5bd;
+      text-transform: uppercase; }
+    .driver-list .driver-content .image-container {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 170px;
+      width: 100%;
+      display: block; }
+    .driver-list .driver-content img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      max-height: 150px; }
+
 .entry-meta {
   margin-bottom: 20px; }
   .entry-meta a {
@@ -11007,7 +11037,13 @@ body {
     top: auto;
     background-color: #ffb900; }
     #wrapper-navbar .navbar {
-      margin: 0; } }
+      margin: 0; }
+    #wrapper-navbar #main-menu > li .dropdown-menu-level0 {
+      background: rgba(0, 40, 86, 0.9); }
+      #wrapper-navbar #main-menu > li .dropdown-menu-level0 .container {
+        background: none; }
+  #index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper {
+    padding-top: 75px; } }
 
 @media (max-width: 767.98px) {
   #wrapper-navbar #main-menu > li.show {
@@ -11027,6 +11063,9 @@ body {
     margin-left: 10px; }
     #wrapper-navbar #main-menu li .dropdown-menu-level0 li .dropdown-menu-level1 {
       display: none; }
+  #wrapper-navbar .navbar .navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px; }
   #footer-sub-menu {
     display: none; }
   #wrapper-footer-top .calendar-menu {

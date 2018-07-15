@@ -13,29 +13,43 @@ get_header();
 <div class="wrapper" id="driver-wrapper">
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
-		<div class="row news-frontpage">
+		<div class="row driver-list">
 				<?php
-				$driverpages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
+				$driverpages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_title', 'sort_order' => 'desc' ) );
+
+				// print_r($driverpages);
 
 				  $count = 0;
 				  foreach($driverpages as $driverpage) {
 						$thumbnail_url = get_the_post_thumbnail_url($driverpage->ID);
 				    ?>
-						<div class="col-md">
-							<div class="news-content">
+						<div class="col-sm-3">
+							<div class="driver-content">
 								<div class="image-container" style="background-image: url(<?php echo $thumbnail_url; ?>)">
 								</div>
 					    	<!-- <img src="<?php echo $thumbnail_url; ?>" class="img-fluid"> -->
 					      <!-- <div class="carousel-caption d-none d-md-block"> -->
 				        
-				        <a href="<?php echo get_permalink($driverpage->ID); ?>" class=""><h3><?php echo $driverpage->post_title; ?></h3></a>
-							</div>
+					        
+					        	<?php
+					        		$driverNumber = get_field('nummer_field', $driverpage);
+					        		
+					        	?>
+					        	<h2><?php echo '#' . $driverNumber; ?></h2>
+					        	<h3>
+					        		<a href="<?php echo get_permalink($driverpage->ID); ?>">
+					        			<?php echo $driverpage->post_title; ?>
+					        			</a>
+					        		</h3>
+					        	<h4><?php echo get_field('team_field', $driverpage); ?></h4>
+					        
+						</div>
 				    </div>
 				    <?php
 				    $count++;
-						if($count%3 == 0) {
+						if($count%4 == 0) {
 							echo '</div>';
-							echo '<div class="row news-frontpage">';
+							echo '<div class="row driver-list">';
 						}
 				  }
 
