@@ -37,6 +37,10 @@
 						<td><?php the_field('stad_field'); ?></td>
 					</tr>
 					<tr>
+						<td>Vinster</td>
+						<td><?php the_field('vinster_field'); ?></td>
+					</tr>
+					<tr>
 						<td>Pallplatser</td>
 						<td><?php the_field('pallplatser_field'); ?></td>
 					</tr>
