@@ -39,11 +39,10 @@ get_header();
 						        		$driverNumber = get_field('nummer_field', $driverpage);
 						        		
 						        	?>
-						        	<h2><?php echo '#' . $driverNumber; ?></h2>
+						        	<h2><?php echo $driverNumber; ?></h2>
 						        	<h3>
-						        		
-						        			<?php echo $driverpage->post_title; ?>
-						        		</h3>
+					        			<?php echo $driverpage->post_title; ?>
+					        		</h3>
 						        	<h4><?php echo get_field('team_field', $driverpage); ?></h4>
 						        
 								</div>
