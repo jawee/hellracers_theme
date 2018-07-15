@@ -15,7 +15,7 @@ get_header();
 
 		<div class="row driver-list no-gutters">
 				<?php
-				$driverpages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_title', 'sort_order' => 'desc' ) );
+				$driverpages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_title', 'sort_order' => 'asc' ) );
 
 				// print_r($driverpages);
 

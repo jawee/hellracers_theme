@@ -15,6 +15,10 @@ body {
   background-color: $white;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
 .size-full {
   width: 100%;
 }
@@ -467,7 +471,10 @@ body {
       }
     }
   }
-
+  
+  #driver-page-wrapper, #driver-wrapper, #index-wrapper, #page-wrapper {
+    padding-top: 30px;
+  }
   #footer-sub-menu {
     display: none;
   }
