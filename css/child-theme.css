@@ -10970,7 +10970,7 @@ body {
     font-weight: 400;
     margin-bottom: 30px; }
 
-#index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper {
+#index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper, #archive-wrapper {
   padding-top: 170px; }
 
 #single-wrapper {
@@ -11003,6 +11003,9 @@ body {
 .driver-list {
   text-align: center;
   margin-bottom: 30px; }
+  .driver-list a {
+    color: #000000;
+    text-decoration: none; }
   .driver-list .driver-cell {
     border: 1px solid #ffffff; }
   .driver-list .driver-content {
@@ -11020,13 +11023,20 @@ body {
       font-size: 0.75rem;
       color: #adb5bd;
       text-transform: uppercase; }
+    .driver-list .driver-content .image-container-outer {
+      overflow: hidden; }
     .driver-list .driver-content .image-container {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       height: 170px;
       width: 100%;
-      display: block; }
+      display: block;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      .driver-list .driver-content .image-container:hover, .driver-list .driver-content .image-container:active {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2); }
     .driver-list .driver-content img {
       -o-object-fit: cover;
          object-fit: cover;
@@ -11049,7 +11059,7 @@ body {
       background: rgba(0, 40, 86, 0.9); }
       #wrapper-navbar #main-menu > li .dropdown-menu-level0 .container {
         background: none; }
-  #index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper {
+  #index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper, #archive-wrapper {
     padding-top: 75px; } }
 
 @media (max-width: 767.98px) {

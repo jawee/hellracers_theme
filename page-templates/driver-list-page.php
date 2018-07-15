@@ -24,27 +24,31 @@ get_header();
 						$thumbnail_url = get_the_post_thumbnail_url($driverpage->ID);
 				    ?>
 						<div class="col-md-3 col-sm-6 col-6 driver-cell">
-							<div class="driver-content">
-								<div class="image-container" style="background-image: url(<?php echo $thumbnail_url; ?>)">
+							<a href="<?php echo get_permalink($driverpage->ID); ?>">
+								<div class="driver-content">
+									<div class="image-container-outer">
+										<div class="image-container" style="background-image: url(<?php echo $thumbnail_url; ?>)">
+										</div>
+									</div>
+									
+						    	<!-- <img src="<?php echo $thumbnail_url; ?>" class="img-fluid"> -->
+						      <!-- <div class="carousel-caption d-none d-md-block"> -->
+					        
+						        
+						        	<?php
+						        		$driverNumber = get_field('nummer_field', $driverpage);
+						        		
+						        	?>
+						        	<h2><?php echo '#' . $driverNumber; ?></h2>
+						        	<h3>
+						        		
+						        			<?php echo $driverpage->post_title; ?>
+						        		</h3>
+						        	<h4><?php echo get_field('team_field', $driverpage); ?></h4>
+						        
 								</div>
-					    	<!-- <img src="<?php echo $thumbnail_url; ?>" class="img-fluid"> -->
-					      <!-- <div class="carousel-caption d-none d-md-block"> -->
-				        
-					        
-					        	<?php
-					        		$driverNumber = get_field('nummer_field', $driverpage);
-					        		
-					        	?>
-					        	<h2><?php echo '#' . $driverNumber; ?></h2>
-					        	<h3>
-					        		<a href="<?php echo get_permalink($driverpage->ID); ?>">
-					        			<?php echo $driverpage->post_title; ?>
-					        			</a>
-					        		</h3>
-					        	<h4><?php echo get_field('team_field', $driverpage); ?></h4>
-					        
-						</div>
-				    </div>
+							</a>	
+				    	</div>
 				    <?php
 				  //   $count++;
 						// if($count%4 == 0) {
