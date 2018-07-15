@@ -346,10 +346,17 @@ body {
 .driver-list {
   text-align: center;
   margin-bottom: 30px;
+
+
+  .driver-cell {
+    border: 1px solid #ffffff;
+  }
+
   .driver-content {
     padding-bottom: 15px;
     background-color: #ffffff;
     text-align: left;
+
 
     h2 {
       // font-size: 3rem;
@@ -368,7 +375,7 @@ body {
       text-transform: uppercase;
     }
     .image-container {
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       height: 170px;
@@ -487,5 +494,16 @@ body {
       }
     }
     
+  }
+}
+
+@media(max-width: 575px) {
+
+  #wrapper-navbar  {
+    .navbar {
+      .navbar-brand {
+        padding-left: 15px;
+      }
+    }
   }
 }
