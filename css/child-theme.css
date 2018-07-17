@@ -10951,6 +10951,8 @@ body {
   width: 100%;
   max-height: 800px;
   text-align: center; }
+  #featured-slider .carousel-item .img-fluid {
+    width: 100%; }
   #featured-slider .carousel-item .content-headline {
     width: 100%;
     height: 150px;
@@ -10979,6 +10981,9 @@ body {
 
 #index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper, #archive-wrapper {
   padding-top: 170px; }
+
+.driver-number {
+  color: #ffb900; }
 
 #single-wrapper {
   padding-top: 5px; }

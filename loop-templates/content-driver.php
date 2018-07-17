@@ -19,7 +19,7 @@
 			
 		<?php 
 			$number = get_field('nummer_field');
-			the_title( '<h1 class="entry-title">', ' - #' . $number . '</h1>' ); 
+			the_title( '<h1 class="entry-title">', ' - <span class="driver-number">' . $number . '</span></h1>' ); 
 		?>
 		
 		<div class="row">
