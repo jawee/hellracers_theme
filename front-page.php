@@ -32,7 +32,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				  foreach($recent_posts as $recent) {
 						$thumbnail_url = get_the_post_thumbnail_url($recent["ID"]);
 
-						$the_date = $post_date = get_the_date( 'j F Y', $recent);
+						$the_date = get_the_date( 'j F Y', $recent);
 				    ?>
 					<div class="col-md-4">
 						<div class="news-content">
