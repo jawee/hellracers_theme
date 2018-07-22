@@ -23,7 +23,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		<h1 class="front-page-heading"><?php the_field('titel_field'); ?></h1>
 		<div class="row news-frontpage">
 				<?php
-				$args = array( 'numberposts' => 6, 'offset' => 3 );
+				$args = array( 'numberposts' => 6 );
 				$recent_posts = wp_get_recent_posts($args);
 				wp_reset_query();
 				?>
