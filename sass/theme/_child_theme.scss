@@ -41,14 +41,6 @@ body {
   top: 50px;
   z-index: 999;
 
-  .show-all {
-    padding-top: 10px;
-    color: $yellow;
-    a {
-      color: $yellow;
-    }
-  }
-
   .dropdown {
     position: unset;
   }
@@ -66,6 +58,14 @@ body {
   }
 
   #main-menu {
+
+    .show-all {
+      padding-top: 10px;
+      color: $yellow;
+      a {
+        color: $yellow;
+      }
+    }
 
     .dropdown-toggle::after {
       display: none;

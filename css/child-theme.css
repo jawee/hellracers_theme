@@ -10798,11 +10798,6 @@ body {
   width: 100%;
   top: 50px;
   z-index: 999; }
-  #wrapper-navbar .show-all {
-    padding-top: 10px;
-    color: #ffb900; }
-    #wrapper-navbar .show-all a {
-      color: #ffb900; }
   #wrapper-navbar .dropdown {
     position: unset; }
   #wrapper-navbar .navbar {
@@ -10812,6 +10807,11 @@ body {
       padding: 0; }
     #wrapper-navbar .navbar .navbar-toggler {
       border: none; }
+  #wrapper-navbar #main-menu .show-all {
+    padding-top: 10px;
+    color: #ffb900; }
+    #wrapper-navbar #main-menu .show-all a {
+      color: #ffb900; }
   #wrapper-navbar #main-menu .dropdown-toggle::after {
     display: none; }
   #wrapper-navbar #main-menu > li a {
