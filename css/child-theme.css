@@ -10798,6 +10798,11 @@ body {
   width: 100%;
   top: 50px;
   z-index: 999; }
+  #wrapper-navbar .show-all {
+    padding-top: 10px;
+    color: #ffb900; }
+    #wrapper-navbar .show-all a {
+      color: #ffb900; }
   #wrapper-navbar .dropdown {
     position: unset; }
   #wrapper-navbar .navbar {
@@ -10946,10 +10951,6 @@ body {
         padding: 0; }
   #wrapper-footer-bottom .divider {
     padding-top: 10px; }
-
-.show-all {
-  padding-top: 10px;
-  color: #ffb900; }
 
 #featured-slider .carousel-item {
   width: 100%;

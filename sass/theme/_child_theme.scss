@@ -41,6 +41,14 @@ body {
   top: 50px;
   z-index: 999;
 
+  .show-all {
+    padding-top: 10px;
+    color: $yellow;
+    a {
+      color: $yellow;
+    }
+  }
+
   .dropdown {
     position: unset;
   }
@@ -270,12 +278,6 @@ body {
     padding-top: 10px;
   }
 }
-
-.show-all {
-  padding-top: 10px;
-  color: $yellow;
-}
-
 
 
 #featured-slider {
