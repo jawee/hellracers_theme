@@ -10947,6 +10947,10 @@ body {
   #wrapper-footer-bottom .divider {
     padding-top: 10px; }
 
+.show-all {
+  padding-top: 10px;
+  color: #ffb900; }
+
 #featured-slider .carousel-item {
   width: 100%;
   max-height: 800px;
