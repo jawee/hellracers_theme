@@ -12,7 +12,7 @@ get_header();
 
 <div class="wrapper" id="driver-wrapper">
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
-		<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+		<?php get_template_part( 'loop-templates/content', 'page-no-featured' ); ?>
 
 		<div class="row driver-list no-gutters">
 				<?php

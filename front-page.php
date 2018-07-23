@@ -22,7 +22,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 		<h1 class="front-page-heading"><?php the_field('titel_field'); ?></h1>
 
-		<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+		<?php get_template_part( 'loop-templates/content', 'page-no-featured' ); ?>
 		<div class="row news-frontpage">
 				<?php
 				$args = array( 'numberposts' => 6 );
