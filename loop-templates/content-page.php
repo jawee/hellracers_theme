@@ -15,9 +15,9 @@
 	</header><!-- .entry-header -->
 	
 	<?php 
-		if (!is_front_page()) {
-			echo get_the_post_thumbnail( $post->ID, 'large' ); 
-		}
+		// if (!is_front_page() ) {
+		// 	echo get_the_post_thumbnail( $post->ID, 'large' ); 
+		// }
 	?>
 
 	<div class="entry-content">
