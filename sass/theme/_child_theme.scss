@@ -333,8 +333,14 @@ body {
 
 
 
-#index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper, #archive-wrapper {
+#news-wrapper, #index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper, #archive-wrapper {
   padding-top: 170px;
+}
+
+#start-wrapper, #driver-wrapper {
+  .entry-header {
+    display: none;
+  }
 }
 
 .driver-number {

@@ -13,6 +13,8 @@ get_header();
 <div class="wrapper" id="driver-wrapper">
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
+		<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+
 		<div class="row driver-list no-gutters">
 				<?php
 				$driverpages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_title', 'sort_order' => 'asc' ) );
