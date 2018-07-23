@@ -10985,7 +10985,7 @@ body {
     font-weight: 100;
     margin-bottom: 30px; }
 
-#news-wrapper, #index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper, #archive-wrapper {
+#news-wrapper, #full-width-page-wrapper, #index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper, #archive-wrapper {
   padding-top: 170px; }
 
 #start-wrapper .entry-header, #driver-wrapper .entry-header {
