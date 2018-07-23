@@ -41,10 +41,18 @@
 						<td><?php the_field('team_field'); ?></td>
 					</tr>
 					<tr>
+						<td>Mästerskapstitlar</td>
+						<td><?php the_field('masterskapstitlar_field'); ?></td>
+					</tr>
 					<tr>
 						<td>Körda race</td>
 						<td><?php the_field('korda_race_field'); ?></td>
 					</tr>
+					<tr>
+						<td>Bästa placering</td>
+						<td><?php the_field('basta_placering_field'); ?></td>
+					</tr>
+					<tr>
 						<td>Vinster</td>
 						<td><?php the_field('vinster_field'); ?></td>
 					</tr>
@@ -55,14 +63,6 @@
 					<tr>
 						<td>Karriärpoäng</td>
 						<td><?php the_field('karriarpoang_field'); ?></td>
-					</tr>
-					<tr>
-						<td>Mästerskapstitlar</td>
-						<td><?php the_field('masterskapstitlar_field'); ?></td>
-					</tr>
-					<tr>
-						<td>Bästa placering</td>
-						<td><?php the_field('basta_placering_field'); ?></td>
 					</tr>
 				</table>
 			</div>
