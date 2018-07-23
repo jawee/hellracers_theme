@@ -37,6 +37,10 @@
 						<td><?php the_field('stad_field'); ?></td>
 					</tr>
 					<tr>
+					<tr>
+						<td>Körda race</td>
+						<td><?php the_field('korda_race_field'); ?></td>
+					</tr>
 						<td>Vinster</td>
 						<td><?php the_field('vinster_field'); ?></td>
 					</tr>
@@ -49,10 +53,6 @@
 						<td><?php the_field('karriarpoang_field'); ?></td>
 					</tr>
 					<tr>
-						<td>Körda race</td>
-						<td><?php the_field('korda_race_field'); ?></td>
-					</tr>
-					<tr>
 						<td>Mästerskapstitlar</td>
 						<td><?php the_field('masterskapstitlar_field'); ?></td>
 					</tr>
@@ -61,11 +61,7 @@
 						<td><?php the_field('basta_placering_field'); ?></td>
 					</tr>
 					<tr>
-						<td>iRating</td>
-						<td><?php the_field('irating_field'); ?></td>
-					</tr>
-					<tr>
-						<td>Födelsedatum</td>
+						<td>Ålder</td>
 						<td><?php the_field('fodelsedatum_field'); ?></td>
 					</tr>
 				</table>
