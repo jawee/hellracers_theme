@@ -38,7 +38,9 @@ get_header();
 						        
 						        	<?php
 						        		$driverNumber = get_field('nummer_field', $driverpage);
-						        		
+						        		if(strlen($driverNumber) == 0) {
+						        			$driverNumber = "&nbsp;";
+						        		}
 						        	?>
 						        	<h2><?php echo $driverNumber; ?></h2>
 						        	<h3>
