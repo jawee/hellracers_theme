@@ -29,12 +29,16 @@
 			<div class="col-md-5">
 				<table class="table table-bordered table-sm">
 					<tr>
-						<td>Team</td>
-						<td><?php the_field('team_field'); ?></td>
+						<td>Ålder</td>
+						<td><?php the_field('fodelsedatum_field'); ?></td>
 					</tr>
 					<tr>
 						<td>Stad</td>
 						<td><?php the_field('stad_field'); ?></td>
+					</tr>
+					<tr>
+						<td>Team</td>
+						<td><?php the_field('team_field'); ?></td>
 					</tr>
 					<tr>
 					<tr>
@@ -59,10 +63,6 @@
 					<tr>
 						<td>Bästa placering</td>
 						<td><?php the_field('basta_placering_field'); ?></td>
-					</tr>
-					<tr>
-						<td>Ålder</td>
-						<td><?php the_field('fodelsedatum_field'); ?></td>
 					</tr>
 				</table>
 			</div>
