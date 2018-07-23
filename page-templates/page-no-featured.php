@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Full Width Page
+ * Template Name: Ingen Featured bild
  *
- * Template for displaying a page without sidebar even if a sidebar widget is published.
+ * Full bredd sida utan någon featured image
  *
  * @package understrap
  */
