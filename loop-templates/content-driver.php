@@ -30,7 +30,7 @@
 				<table class="table table-bordered table-sm">
 					<tr>
 						<td>Ålder</td>
-						<td><?php the_field('fodelsedatum_field'); ?></td>
+						<td><?php the_field('alder_field'); ?></td>
 					</tr>
 					<tr>
 						<td>Stad</td>
