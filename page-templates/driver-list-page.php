@@ -23,6 +23,10 @@ get_header();
 				  $count = 0;
 				  foreach($driverpages as $driverpage) {
 						$thumbnail_url = get_the_post_thumbnail_url($driverpage->ID);
+						$driverNumber = get_field('nummer_field', $driverpage);
+		        		if(strlen($driverNumber) == 0) {
+		        			$driverNumber = "&nbsp;";
+		        		}
 				    ?>
 						<div class="col-md-3 col-sm-6 col-6 driver-cell">
 							<a href="<?php echo get_permalink($driverpage->ID); ?>">
@@ -31,17 +35,6 @@ get_header();
 										<div class="image-container" style="background-image: url(<?php echo $thumbnail_url; ?>)">
 										</div>
 									</div>
-									
-						    	<!-- <img src="<?php echo $thumbnail_url; ?>" class="img-fluid"> -->
-						      <!-- <div class="carousel-caption d-none d-md-block"> -->
-					        
-						        
-						        	<?php
-						        		$driverNumber = get_field('nummer_field', $driverpage);
-						        		if(strlen($driverNumber) == 0) {
-						        			$driverNumber = "&nbsp;";
-						        		}
-						        	?>
 						        	<h2><?php echo $driverNumber; ?></h2>
 						        	<h3>
 					        			<?php echo $driverpage->post_title; ?>
@@ -52,37 +45,10 @@ get_header();
 							</a>	
 				    	</div>
 				    <?php
-				  //   $count++;
-						// if($count%4 == 0) {
-						// 	echo '</div>';
-						// 	echo '<div class="row driver-list">';
-						// }
 				  }
 
-					$remaining = $count%3;
-					for($i = 1; $i < $remaining; $i++) {
-						echo '<div class="col-md-3 col-sm-4 col-6"></div>';
-					}
-
 				?>
-	</div><!-- .row -->
-
-		<?php
-			
-
-			foreach( $mypages as $page ) {		
-				$content = $page->post_name;
-				if ( ! $content ) // Check for empty page
-					continue;
-
-				$content = apply_filters( 'the_content', $content );
-			?>
-				<h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
-				<div class="entry"><?php echo $content; ?></div>
-			<?php
-			}	
-		?>
-
+		</div><!-- .row -->
 	</div><!-- Container end -->
 </div><!-- Wrapper end -->
 
