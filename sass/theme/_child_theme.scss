@@ -3,6 +3,8 @@ $yellow: #ffb900;
 $blue: #115fff;
 $darkblue: #002856;
 
+$darkYellow: #d99d00;
+
 $footerTop: #1F6BA0;
 $footerBottom: #002856;
 
@@ -26,6 +28,12 @@ body {
 * {
   font-family: 'Cairo', sans-serif;
   outline: none !important;
+}
+
+a {
+  &:hover, &:active {
+    text-decoration: none;
+  }
 }
 
 .btn-primary, .btn-secondary {
@@ -393,6 +401,7 @@ body {
         }
         &:hover, &:active {
           text-decoration: none;
+          color: $darkYellow;
         }
       }
     }
@@ -643,6 +652,11 @@ body {
       }
     }
   }
+
+  #single-wrapper {
+    padding: 5px 15px 0 15px;
+  }
+  
   .home #featured-slider {
     .carousel-indicators {
       bottom: 0;
