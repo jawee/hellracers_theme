@@ -27,41 +27,41 @@
 				<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 			</div>
 			<div class="col-md-5">
-				<table class="table table-bordered table-sm">
+				<table class="table table-sm borderless">
 					<tr>
-						<td>Ålder</td>
+						<td>Ålder:</td>
 						<td><?php the_field('alder_field'); ?></td>
 					</tr>
 					<tr>
-						<td>Stad</td>
+						<td>Stad:</td>
 						<td><?php the_field('stad_field'); ?></td>
 					</tr>
 					<tr>
-						<td>Team</td>
+						<td>Team:</td>
 						<td><?php the_field('team_field'); ?></td>
 					</tr>
 					<tr>
-						<td>Mästerskapstitlar</td>
+						<td>Mästerskapstitlar:</td>
 						<td><?php the_field('masterskapstitlar_field'); ?></td>
 					</tr>
 					<tr>
-						<td>Körda race</td>
+						<td>Körda race:</td>
 						<td><?php the_field('korda_race_field'); ?></td>
 					</tr>
 					<tr>
-						<td>Bästa placering</td>
+						<td>Bästa placering:</td>
 						<td><?php the_field('basta_placering_field'); ?></td>
 					</tr>
 					<tr>
-						<td>Vinster</td>
+						<td>Vinster:</td>
 						<td><?php the_field('vinster_field'); ?></td>
 					</tr>
 					<tr>
-						<td>Pallplatser</td>
+						<td>Pallplatser:</td>
 						<td><?php the_field('pallplatser_field'); ?></td>
 					</tr>
 					<tr>
-						<td>Karriärpoäng</td>
+						<td>Karriärpoäng:</td>
 						<td><?php the_field('karriarpoang_field'); ?></td>
 					</tr>
 				</table>

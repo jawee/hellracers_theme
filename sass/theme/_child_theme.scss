@@ -21,6 +21,10 @@ body {
   font-weight: 600;
 }
 
+.borderless td, .borderless th {
+    border: none;
+}
+
 .size-full {
   width: 100%;
 }
