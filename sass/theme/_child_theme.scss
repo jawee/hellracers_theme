@@ -16,7 +16,7 @@ body {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-weight: 100;
+  font-weight: 600;
 }
 
 .size-full {
@@ -334,7 +334,7 @@ body {
 
 
 #news-wrapper, #crew-wrapper, #full-width-page-wrapper, #index-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper, #archive-wrapper {
-  padding-top: 130px;
+  padding-top: 170px;
 }
 
 #start-wrapper, #driver-wrapper {
@@ -530,7 +530,7 @@ body {
     }
   }
 
-  #index-wrapper, #crew-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper, #archive-wrapper {
+  #full-width-page-wrapper, #news-wrapper, #index-wrapper, #crew-wrapper, #page-wrapper, #driver-wrapper, #driver-page-wrapper, #archive-wrapper {
     padding-top: 75px;
   }
 }
@@ -603,7 +603,7 @@ body {
     }
   }
   
-  #driver-page-wrapper, #driver-wrapper, #index-wrapper, #page-wrapper {
+  #full-width-page-wrapper, #news-wrapper, #driver-page-wrapper, #driver-wrapper, #index-wrapper, #page-wrapper {
     padding-top: 30px;
   }
   #footer-sub-menu {
@@ -636,11 +636,24 @@ body {
 }
 
 @media(max-width: 575px) {
-
   #wrapper-navbar  {
     .navbar {
       .navbar-brand {
         padding-left: 15px;
+      }
+    }
+  }
+  .home #featured-slider {
+    .carousel-indicators {
+      bottom: 0;
+    }
+    .btn {
+      font-size: 1rem;
+    }
+    .carousel-caption {
+      bottom: 10px;
+      h3 {
+        font-size: 1.4rem;
       }
     }
   }
