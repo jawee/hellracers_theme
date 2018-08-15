@@ -25,7 +25,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		<?php get_template_part( 'loop-templates/content', 'page-no-featured' ); ?>
 		<div class="row news-frontpage">
 				<?php
-				$args = array( 'numberposts' => 6 );
+				$args = array( 'numberposts' => 6, 'post_status' =>'publish' );
 				$recent_posts = wp_get_recent_posts($args);
 				wp_reset_query();
 				?>

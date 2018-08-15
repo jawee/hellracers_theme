@@ -5,7 +5,7 @@
  *
  * @package understrap
  */
-$args = array( 'numberposts' => '3');
+$args = array( 'numberposts' => '3', 'post_status' =>'publish');
 $recent_posts = wp_get_recent_posts($args);
 
 if(is_single()) {
