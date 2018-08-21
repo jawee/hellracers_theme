@@ -37,7 +37,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 						// $the_date = get_the_date( 'j F Y', $recent);
 
 						// $the_date = $recent['post_date'];
-						$the_date = understrap_posted_on_post($recent);
+						$the_date = understrap_posted_on_post($recent["ID"]);
 				    ?>
 					<div class="col-md-4">
 						<div class="news-content">

@@ -46,14 +46,12 @@ if(!function_exists('understrap_category_for_post')) {
 
 if ( ! function_exists ( 'understrap_posted_on_post' ) ) {
 	function understrap_posted_on_post($post) {
-		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+		$time_string = '<time class="entry-date published">%s</time>';
 
 		$time_string = sprintf( $time_string,
-			esc_attr( get_the_date( 'c', $post ) ),
-			esc_html( get_the_date() ),
-			esc_attr( get_the_modified_date( 'c' ) ),
-			esc_html( get_the_modified_date() )
+			 get_the_date('c', $post) 
 		);
+                $time_string = '<time class="entry-date published">' . get_the_date('d M Y', $post) . '</time>'; 
 		return $time_string;
 	}
 }
