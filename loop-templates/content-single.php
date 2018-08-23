@@ -13,7 +13,7 @@
 		<div class="entry-meta">
 
 			<?php //understrap_posted_on(); ?>
-			<?php understrap_category_for_post(); ?>
+			<?php //understrap_category_for_post(); ?>
 
 		</div><!-- .entry-meta -->
 
