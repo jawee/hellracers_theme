@@ -1,9 +1,9 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-$yellow: #ffb900;
-$blue: #115fff;
-$darkblue: #002856;
+$yellow: #ffc400;
+$blue: #2461ce;
+$darkblue: darken($blue, 10%);
 
-$darkYellow: #d99d00;
+$darkYellow: darken($yellow, 10%);
 
 $footerTop: #1F6BA0;
 $footerBottom: #002856;
